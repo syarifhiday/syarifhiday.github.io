@@ -56,7 +56,7 @@
           <div class="col-md-4 align-items-center d-flex">
             <div>
               <h1>Hi there</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique tenetur facere error officia, hic quia alias officiis iusto ea dolor inventore vel mollitia dolores maiores?</p>
+              <p>I'm a web developer and a security researcher. I design and develop websites while ensuring their security by identifying and addressing potential vulnerabilities.</p>
               <a href="#contact"><button type="button" class="btn fw-bolder mt-2 bg-oren" style="margin-bottom: -20px">Let's talk</button></a>
             </div>
           </div>
@@ -77,26 +77,19 @@
             <br />
           </div>
           <div class="col-md-9">
-            <h3>My programming skills</h3>
-            <p>I master several programming languages ​​used to create websites and mobile applications such as:</p>
+            <h3>My skills</h3>
+            
             <ul>
               <li class="d-flex">
-                <h5>HTML & CSS - <b>(Senior)</b></h5>
+                <h5>HTML, CSS, Javascript, Python, & PHP</h5>
               </li>
               <li class="d-flex">
-                <h5>PHP - <b>(Senior)</b></h5>
+                <h5>Linux</h5>
               </li>
               <li class="d-flex">
-                <h5>Python - <b>(Intermediate)</b></h5>
+                <h5>Penetration Testing</h5>
               </li>
-              <li class="d-flex">
-                <h5>Kotlin - <b>(Intermediate)</b></h5>
-              </li>
-              <li class="d-flex">
-                <h5>Java - <b>(Intermediate)</b></h5>
-              </li>
-              <li class="d-flex">
-                <h5>Javascript - <b>(Junior)</b></h5>
+              
               </li>
             </ul>
           </div>
@@ -115,36 +108,16 @@
         </div>
         <div class="row mb-5 d-flex justify-content-center">
           <div class="col-md-2">
-            <h2 class="oren-gelap">These are my current projects</h2>
+            <h2 class="oren-gelap">Soon . . .</h2>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="card" style="width: fit-content">
-              <img src="img/p1.webp" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Landingpage orange</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card" style="width: fit-content">
-              <img src="img/p2.webp" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Landingpage biru</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card" style="width: fit-content">
-              <img src="img/p3.webp" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text text-black">Landingpage agak biru</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
     <!-- end of projects -->
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- contact -->
     <section id="contact" class="d-flex align-items-center justify-content-center pt-5" style="height: 100vh">
@@ -152,25 +125,42 @@
         <h1 class="text-center mb-3">Contact Me</h1>
         <form style="max-width: 600px">
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" />
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" />
           </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <label for="inputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" />
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Message</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" />
+            <label for="message" class="form-label">Message</label>
+            <input type="text" class="form-control" id="message" />
           </div>
 
-          <button type="submit" class="btn bg-oren">Send</button>
+          <button type="submit" class="btn bg-oren" onclick="sendEmail()">Send</button>
         </form>
       </div>
     </section>
     <!-- end of contact -->
 
+
     <script>
+    function sendEmail() {
+
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('inputEmail').value;
+    var message = document.getElementById('message').value;
+
+    Email.send({
+        To : 'iamsyarifh@gmail.com',
+        From : email,
+        Subject : "Request for Feedback",
+        Body : message,
+      
+      }).then(message => alert("Sent")
+      );
+    }
+   
       function setDarkMode(isDark) {
         if (isDark) {
           document.body.setAttribute("class", "darkmode");
