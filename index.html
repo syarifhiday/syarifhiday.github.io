@@ -53,7 +53,7 @@
             </nav>
             <!-- Mobile menu, show/hide based on menu open state. -->
             
-              <div v-if="isOpen" class="lg:hidden fixed inset-0 z-50" role="dialog" aria-modal="true">
+              <div v-if="isOpen" class="lg:hidden" role="dialog" aria-modal="true">
                 <!-- Background backdrop, show/hide based on slide-over state. -->
                 <div class="fixed inset-0 z-50"></div>
                 <div :class="animationNavBar" id="nav-mobile" class="animate__animated fixed inset-y-0 right-0 z-50 w-full h-screen overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -71,7 +71,7 @@
                   </div>
                   <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
-                      <div class="space-y-2 py-6" @click="animationNavBar = 'animate__fadeOutRight'">
+                      <div class="space-y-2 py-6" @click="animationNavBar = 'animate__fadeOutRight'; isOpen = !isOpen">
                         <a href="#about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:underline">About</a>
                         <a href="#portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:underline">Portfolio</a>
                         <a href="#certificates" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:underline">Certificates</a>
