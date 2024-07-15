@@ -69,8 +69,7 @@ var app = new Vue({
         portfolio: projects,
         certs: certificates,
         isOpen: false,
-        navMobile: ["hidden"],
-        animationNavBar: [""]
+        animationNavBar: ""
     },
     methods: {
         toggleNavBar(isOpen){
