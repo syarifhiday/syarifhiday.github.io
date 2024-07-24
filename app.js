@@ -17,6 +17,12 @@ projects = [
         image: "images/porto3.webp",
         tech: "Android Kotlin",
         link: "https://github.com/syarifhiday/FaceCare"
+    },
+    {
+        title: "Nadagitar Store - Wordpress eCommerce",
+        image: "images/porto4.webp",
+        tech: "Wordpress",
+        link: "https://shop.nadagitar.net"
     }
 ]
 
