@@ -23,6 +23,12 @@ projects = [
         image: "images/porto4.webp",
         tech: "Wordpress",
         link: "https://shop.nadagitar.net"
+    },
+    {
+        title: "Sales Insights: Analyzing Kaggle's Sales Data",
+        image: "images/porto5.webp",
+        tech: "Python, Looker Studio",
+        link: "https://medium.com/@iamsyarifh/proyek-analisis-data-penjualan-dan-pelanggan-34e1ee2c45ec"
     }
 ]
 
@@ -55,16 +61,10 @@ certificates = [
         image: "images/cert/8.webp"
     },
     {
-        image: "images/cert/9.webp"
+        image: "images/cert/13.webp"
     },
     {
-        image: "images/cert/10.webp"
-    },
-    {
-        image: "images/cert/11.webp"
-    },
-    {
-        image: "images/cert/12.webp"
+        image: "images/cert/14.webp"
     }
 ]
 
