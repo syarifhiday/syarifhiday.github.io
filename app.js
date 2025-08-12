@@ -1,5 +1,11 @@
 projects = [
   {
+    title: "Sinau CPNS",
+    image: "images/porto7.webp",
+    tech: "Laravel",
+    link: "https://sinaucpns.com",
+  },
+  {
     title: "IoT clothesline system controller application",
     image: "images/porto1.webp",
     tech: "Android Kotlin",
